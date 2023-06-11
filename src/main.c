@@ -436,9 +436,9 @@ int main(void)
 	GPIO_InitTypeDef gpioInit;
 	TIM_TimeBaseInitTypeDef timerInit;
 	
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE); //Khoi tao clock chan C
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE); //Khoi tao clock chan A
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE); //Khoi tao clock cho Timer2
 	
 	gpioInit.GPIO_Mode = GPIO_Mode_Out_PP;
 	gpioInit.GPIO_Pin = GPIO_Pin_13;
